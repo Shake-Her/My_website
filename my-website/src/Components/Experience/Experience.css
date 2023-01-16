@@ -1,0 +1,126 @@
+#headtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skillsCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 1.5rem;
+}
+
+.devCards{
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    border: solid;
+    border-radius: 2rem;
+}
+
+.devCards>span {
+    padding: 1rem;
+    background-color: gray;
+    border-radius: 0.8rem;
+}
+
+.devCards>span:hover{
+    background-color: white;
+    color: black;
+}
+
+.codingProfiles{
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    border: solid;
+    border-radius: 2rem;
+}
+
+.codingProfiles>a {
+    padding: 1rem;
+    color: white;
+    background-color: gray;
+    border-radius: 0.8rem;
+}
+
+.codingProfiles>a:hover {
+    background-color: white;
+    color: black;
+}
+
+.experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    border: solid white;
+    margin-top: 2rem;
+    margin-left: 25%;
+    border-radius: 1rem;
+    background-color: gray;
+    color: black;
+}
+
+/* Pink theme */
+
+.pink_theme .experience{
+    color: black;
+    background-color: rgb(231, 123, 123);
+    border: solid red;
+}
+
+.pink_theme .devCards>span{
+    background-color: red;
+    color: wheat;
+}
+
+.pink_theme .devCards>span:hover{
+    background-color: wheat;
+    color: red;
+}
+
+.pink_theme .codingProfiles > a{
+    background-color: red;
+    color: wheat;
+}
+
+.pink_theme .codingProfiles>a:hover{
+    background-color: wheat;
+    color: red;
+}
+
+@media screen and (max-width: 1024px){
+
+    #Experience{
+        margin-top: 20rem;
+    }
+
+    .skillsCard{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .devCards{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .codingProfiles{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+

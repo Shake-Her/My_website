@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Neucha&family=Patrick+Hand&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.dark_theme{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+        /* Experimental Night Mode */
+    background-color: #282828;
+    background-image:
+    radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px),
+    radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+.pink_theme{
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    /* Experimental Pink/Light mode */
+    background-color: #eec0c8;
+        background-image:
+        radial-gradient(#AA0000, rgba(207, 47, 116.1), 2px, transparent 40px),
+        radial-gradient(#AA0000, rgba(207, 47, 116.1), 1px, transparent 30px),
+        radial-gradient(#AA0000, rgba(207, 47, 116.1), 2px, transparent 40px),
+        radial-gradient(rgba(207, 47, 116.1), rgba(207, 47, 116.1), 2px, transparent 30px);
+        background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+        background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+
+
+section{
+    margin-top: 8rem;
+    height: 100vh;
+}
+
+/* Smooth Scroll while clicking on navbar */
+html{
+    scroll-behavior: smooth;
+}
+
+/* removing scroll bar from browser */
+::-webkit-scrollbar {
+    display:none;
+}

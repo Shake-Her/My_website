@@ -1,0 +1,31 @@
+#Portfolio{
+    margin-top: 30rem;
+}
+.projectTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.portfolioCards{
+    display: grid;
+    margin-left: 15rem;
+    grid-template-columns: 25% 25% 25%;
+    gap: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+
+    #Portfolio {
+        margin-top: 110rem;
+    }
+    
+    .portfolioCards{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 0rem;
+    }
+}

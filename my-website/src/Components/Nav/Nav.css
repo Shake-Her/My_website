@@ -1,0 +1,59 @@
+nav {
+    display: block;
+    width: max-content;
+    position: fixed;
+    transform: translate(-50%);
+    bottom: 2rem;
+    left: 50%;
+    z-index: 2;
+    padding: 0.5rem 1.7rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 5rem;
+    backdrop-filter: blur(20px);
+    border: solid;
+}
+
+nav a{
+    background:transparent;
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    font-size: 1.1rem;
+}
+
+#smalljpg{
+    height: 3rem;
+    width: 3rem;
+    background: transparent;
+    border: 0.2rem;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: white;
+}
+
+.dark_theme nav>a{
+        color: white;
+}
+
+.dark_theme nav a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dark_theme nav a.active {
+    background: gray;
+    color: black;
+}
+
+.pink_theme nav>a {
+    color: red;
+}
+
+.pink_theme nav a:hover {
+    background-color: wheat
+}
+
+.pink_theme nav a.active {
+    background: wheat;
+    color: red;
+}

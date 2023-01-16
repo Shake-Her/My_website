@@ -1,0 +1,61 @@
+#Contact{
+    margin-top: 30rem;
+}
+
+.contactIntro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.submitBtn{
+    color: gray;
+    background-color: white;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.submitBtn:hover {
+    background-color: gray;
+    color: white;
+}
+
+.formStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.formStyle >input{
+    width: 50%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: transparent;
+    border: 0.3rem solid white;
+    resize: none;
+    color: white;
+}
+
+.pink_theme .submitBtn{
+    background-color: red;
+    color: wheat;
+}
+
+.pink_theme .submitBtn:hover {
+    background-color: wheat;
+    color: red;
+}
+
+.pink_theme .formStyle>input{
+    border: 0.3rem solid red;
+    color: black;
+}
+
+@media screen and (max-width: 1024px){
+    #Contact{
+        margin-top: 170rem;
+    }
+}
