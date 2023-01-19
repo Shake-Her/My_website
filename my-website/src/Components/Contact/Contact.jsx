@@ -2,6 +2,7 @@ import React from 'react'
 import './Contact.css';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
+import { GMAIL, FORM_TEMPLATE,USER_ID } from './hiddenvariablesfromgit';
 
 const Contact = () => {
     const form = useRef();
@@ -9,7 +10,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_87zawem', 'template_ay0b0il', form.current, 'qnf4LhZmu0VzBvUgX')
+    emailjs.sendForm(GMAIL, FORM_TEMPLATE, form.current, USER_ID)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
